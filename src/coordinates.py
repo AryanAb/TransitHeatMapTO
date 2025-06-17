@@ -95,21 +95,21 @@ TTC_SUBWAY_STATIONS = [
     (43.667793, -79.402292), # St George station
     (43.669663, -79.392221), # Bay station
     (43.670956, -79.387595), # Bloor-Yonge station
-    (43.672993, -79.377021), # Sherbourne station
-    (43.673629, -79.374332), # Castle Frank station
+    (43.672399, -79.376302), # Sherbourne station
+    (43.673651, -79.368485), # Castle Frank station
     (43.676150, -79.361141), # Broadview station
     (43.677414, -79.355024), # Chester station
     (43.679241, -79.347511), # Pape station
     (43.680185, -79.341442), # Donlands station
     (43.682190, -79.332879), # Greenwood station
     (43.685119, -79.326253), # Coxwell station
-    (43.685863, -79.322428), # Woodbine station
+    (43.686638, -79.312690), # Woodbine station
     (43.692227, -79.300543), # Main Street station
     (43.695391, -79.292660), # Victoria Park station
     (43.710067, -79.280746), # Warden station
     (43.732648, -79.265035), # Kennedy station*
     (43.775293, -79.347201), # Don Mills station
-    (43.770852, -79.36878), # Leslie station
+    (43.770852, -79.368780), # Leslie station
     (43.769018, -79.376824), # Bessarion station
     (43.768273, -79.384641), # Bayview station
     (43.779673, -79.415666), # Finch station
