@@ -6,7 +6,7 @@ from datetime import datetime
 import googlemaps
 from tqdm import tqdm
 
-from coordinates import U_OF_T, corners
+from coordinates import EXHIBITION_STATION, corners
 from utils import is_point_below_coast
 
 load_dotenv()
@@ -60,11 +60,10 @@ def main():
     for point in tqdm(points):
         duration = calculate_time_to_travel(
             point,
-            U_OF_T,
-            departure_time=datetime.strptime("2025-09-06 08:00", "%Y-%m-%d %H:%M"),
+            EXHIBITION_STATION,
+            departure_time=datetime.strptime("2025-09-13 18:00", "%Y-%m-%d %H:%M"),
         )
         coordinate_to_duration_map[", ".join(str(x) for x in point)] = duration
-        time.sleep(0.25)  # sleep for a bit to avoid rate limiting
 
     with open("data/file.json", "w") as file:
         file.write(json.dumps(coordinate_to_duration_map))

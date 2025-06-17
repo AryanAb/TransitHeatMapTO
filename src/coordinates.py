@@ -8,6 +8,8 @@ corners = [
 ]
 
 # Coordinates for points of interest in the city
+UNION_STATION = (43.645869, -79.381207)
+EXHIBITION_STATION = (43.635855, -79.419000)
 CITY_HALL = (43.652940, -79.383840)
 DUNDAS_AND_OSSINGTON = (43.649310, -79.420739)
 DISTILLERY_DISTRICT = (43.650302, -79.359594)
@@ -120,8 +122,9 @@ TTC_SUBWAY_STATIONS = [
     (43.686173, -79.395186), # St Clair station
     (43.679783, -79.392128), # Summerhill station
     (43.674871, -79.390686), # Rosedale station
-    (43.664404, -79.385712), # Wellesley station
-    (43.662747, -79.385061), # College station
+    (43.663938, -79.385612), # Wellesley station
+    (43.659833, -79.383985), # College station
+    (43.656448, -79.382000), # Dundas station
     (43.653582, -79.382181), # Queen station
     (43.649217, -79.380537), # King station
     (43.645869, -79.381207), # Union station*

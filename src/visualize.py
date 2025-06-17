@@ -6,7 +6,7 @@ import contextily as ctx
 from pyproj import Transformer
 from matplotlib.lines import Line2D
 from coordinates import (
-    DISTILLERY_DISTRICT,
+    EXHIBITION_STATION,
     GO_TRAIN_STATIONS,
     TTC_SUBWAY_STATIONS,
 )
@@ -91,6 +91,7 @@ def plot_grid_points(lats, lons):
     ctx.add_basemap(
         ax, crs="EPSG:3857", source=ctx.providers.OpenStreetMap.Mapnik, alpha=0.5
     )
+    plt.axis('off')
     plt.tight_layout()
     plt.show()
 
@@ -194,7 +195,7 @@ def plot_heatmap(x_coords, y_coords, grid_travel_times, destination):
 
 
 def main():
-    points, values = extract_data("data/Distillery_0800.json")
+    points, values = extract_data("data/Exhibition_Station_1800.json")
     (
         grid_lat,
         grid_lon,
@@ -204,7 +205,7 @@ def main():
     )
     x_coords, y_coords = transform_to_mercator(grid_lon, grid_lat)
     # Divide by 60 to convert from seconds to minutes
-    plot_heatmap(x_coords, y_coords, grid_travel_times / 60, DISTILLERY_DISTRICT)
+    plot_heatmap(x_coords, y_coords, grid_travel_times / 60, EXHIBITION_STATION)
 
 
 if __name__ == "__main__":

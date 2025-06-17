@@ -6,13 +6,13 @@ This repository contains the code for my data visualization project. Feel free t
 
 ![Heatmap with University of Toront as destination](examples/U_of_T_0800.png)
 
-![Heatmap with Distillery District as destination](examples/Distillery_0800.png)
+![Heatmap with Union Station as destination](examples/Union_Station_0800.png)
 
 ## How to Run
 
 ### Data Gathering
 
-In the repository, I have already provided some data in the form of json files under the `data` directory. However, you can also use the `get_data.py` script to gather your own data. You will require a Google Maps API key with the Directions API enabled. You'd want to add this to a `.env` file like this:
+I have already provided some data in the form of JSON files under the `data` directory. However, you can also use the `get_data.py` script to gather your own data. You will require a Google Maps API key with the Directions API enabled. You'd want to add this to a `.env` file like this:
 
 ```SHELL
 GOOGLE_MAPS_API_KEY=YOUR_API_KEY_HERE
